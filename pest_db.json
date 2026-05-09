@@ -1,0 +1,178 @@
+{
+  "Rice Leaf Roller": {
+    "scientific_name": "Cnaphalocrocis medinalis",
+    "fun_fact": "The larva rolls rice leaves into a tube and feeds inside, making it hard to detect early.",
+    "impact": {
+      "crops": ["Rice", "Paddy"],
+      "loss_level": "High",
+      "loss_desc": "Can reduce rice yield by 20-30% in severe infestations by destroying leaf area.",
+      "infestation_level": "Medium Infestation",
+      "heatmap_desc": "AI indicates active leaf rolling patterns.",
+      "actions": ["Apply neem oil spray every 5 days", "Remove and destroy rolled leaves", "Release Trichogramma parasitoids"],
+      "organic": ["Neem oil", "Bacillus thuringiensis", "Light traps"],
+      "chemical": ["Chlorpyrifos", "Cartap hydrochloride", "Cypermethrin"],
+      "biological": ["Trichogramma wasps", "Spiders", "Predatory beetles"]
+    },
+    "hazard": {
+      "level": "Low Hazard",
+      "level_color": "#22c55e",
+      "traits": {"Venomous": false, "Bites": false, "Disease carrier": false, "Allergy risk": false},
+      "first_aid": "No action needed.",
+      "precautions": "Wear gloves when applying pesticides."
+    }
+  },
+  "Rice Leaf Caterpillar": {
+    "scientific_name": "Naranga aenescens",
+    "fun_fact": "They primarily feed on the edges of rice leaves, leaving characteristic jagged bite marks.",
+    "impact": {
+      "crops": ["Rice", "Wheat", "Grasses"],
+      "loss_level": "Medium",
+      "loss_desc": "Defoliation reduces photosynthetic capacity, leading to lighter grain weight.",
+      "infestation_level": "Moderate Infestation",
+      "heatmap_desc": "AI focus on edge defoliation.",
+      "actions": ["Hand-pick caterpillars in early stages", "Apply BT biopesticides", "Flood fields temporarily"],
+      "organic": ["BT", "Wood ash dusting"],
+      "chemical": ["Spinosad", "Indoxacarb"],
+      "biological": ["Braconid wasps", "Frogs"]
+    },
+    "hazard": {
+      "level": "Low Hazard",
+      "level_color": "#22c55e",
+      "traits": {"Venomous": false, "Bites": false, "Disease carrier": false, "Allergy risk": true},
+      "first_aid": "Wash skin if touched to avoid mild allergic rash.",
+      "precautions": "Wear long sleeves when walking through infested fields."
+    }
+  },
+  "Paddy Stem Maggot": {
+    "scientific_name": "Hydrellia philippina",
+    "fun_fact": "The adult is a tiny gray fly that lays eggs on rice leaves; the maggots mine into the stems.",
+    "impact": {
+      "crops": ["Rice", "Sorghum"],
+      "loss_level": "High",
+      "loss_desc": "Causes 'deadheart' (drying of the central shoot), leading to 10-40% yield loss.",
+      "infestation_level": "Severe Infestation",
+      "heatmap_desc": "AI focus on stem discoloration.",
+      "actions": ["Drain water from field for 3-4 days", "Use systemic insecticides", "Plant resistant varieties"],
+      "organic": ["Field drainage", "Crop rotation"],
+      "chemical": ["Fipronil", "Carbofuran"],
+      "biological": ["Opius wasps"]
+    },
+    "hazard": {
+      "level": "Low Hazard",
+      "level_color": "#22c55e",
+      "traits": {"Venomous": false, "Bites": false, "Disease carrier": true, "Allergy risk": false},
+      "first_aid": "None.",
+      "precautions": "Flies can carry minor agricultural pathogens."
+    }
+  },
+  "Asiatic Rice Borer": {
+    "scientific_name": "Chilo suppressalis",
+    "fun_fact": "One of the most destructive pests of rice globally, it overwinters in the stubble left after harvest.",
+    "impact": {
+      "crops": ["Rice", "Corn", "Sugarcane"],
+      "loss_level": "Critical",
+      "loss_desc": "Complete destruction of tillers leading to 'whiteheads' and massive yield loss.",
+      "infestation_level": "High Infestation",
+      "heatmap_desc": "AI detects entry holes in stems.",
+      "actions": ["Plow under rice stubble", "Apply granular insecticides", "Use pheromone traps"],
+      "organic": ["Pheromone mating disruption", "Stubble burning"],
+      "chemical": ["Chlorantraniliprole", "Triazophos"],
+      "biological": ["Telenomus wasps", "Ducks"]
+    },
+    "hazard": {
+      "level": "Low Hazard",
+      "level_color": "#22c55e",
+      "traits": {"Venomous": false, "Bites": false, "Disease carrier": false, "Allergy risk": false},
+      "first_aid": "None.",
+      "precautions": "Handle chemical treatments with severe care."
+    }
+  },
+  "Brown Plant Hopper": {
+    "scientific_name": "Nilaparvata lugens",
+    "fun_fact": "They suck sap directly from the plant's vascular system, causing the plant to dry out entirely, known as 'hopperburn'.",
+    "impact": {
+      "crops": ["Rice"],
+      "loss_level": "Critical",
+      "loss_desc": "Can wipe out entire fields overnight if 'hopperburn' sets in.",
+      "infestation_level": "Emergency Infestation",
+      "heatmap_desc": "AI detects swarming near the plant base.",
+      "actions": ["Avoid excessive nitrogen fertilizer", "Spray contact insecticides at the plant base", "Alternate wetting and drying"],
+      "organic": ["Neem cake", "Ducks integration"],
+      "chemical": ["Imidacloprid", "Pymetrozine", "Dinotefuran"],
+      "biological": ["Mirid bugs", "Wolf spiders"]
+    },
+    "hazard": {
+      "level": "Medium Hazard",
+      "level_color": "#f59e0b",
+      "traits": {"Venomous": false, "Bites": false, "Disease carrier": true, "Allergy risk": true},
+      "first_aid": "Wash hands. Can cause severe respiratory allergies if inhaled in swarms.",
+      "precautions": "Wear a mask when walking through heavily infested 'hopperburn' areas."
+    }
+  },
+  "Aphids": {
+    "scientific_name": "Aphidoidea",
+    "fun_fact": "Aphids can reproduce asexually, allowing their populations to explode in just a few days.",
+    "impact": {
+      "crops": ["Wheat", "Corn", "Cotton", "Vegetables"],
+      "loss_level": "Medium",
+      "loss_desc": "Stunts plant growth and transmits debilitating viral diseases.",
+      "infestation_level": "High Reproduction Infestation",
+      "heatmap_desc": "AI focuses on dense clusters on undersides of leaves.",
+      "actions": ["Introduce ladybugs", "Spray insecticidal soap", "Use reflective mulches"],
+      "organic": ["Neem oil", "Insecticidal soaps", "Garlic spray"],
+      "chemical": ["Acetamiprid", "Thiamethoxam"],
+      "biological": ["Ladybugs", "Lacewings", "Hoverflies"]
+    },
+    "hazard": {
+      "level": "Low Hazard",
+      "level_color": "#22c55e",
+      "traits": {"Venomous": false, "Bites": false, "Disease carrier": false, "Allergy risk": false},
+      "first_aid": "None.",
+      "precautions": "Harmless to humans, but honeydew excretion can attract stinging ants."
+    }
+  },
+  "Army Worm": {
+    "scientific_name": "Spodoptera frugiperda",
+    "fun_fact": "Named because they literally march across fields in massive lines, consuming everything in their path.",
+    "impact": {
+      "crops": ["Corn", "Wheat", "Sorghum", "Cotton"],
+      "loss_level": "High",
+      "loss_desc": "Can devour entire fields of seedlings overnight.",
+      "infestation_level": "Rapid Spread Infestation",
+      "heatmap_desc": "AI detects aggressive chewing damage.",
+      "actions": ["Dig protective trenches", "Apply baits", "Spray systemic insecticides"],
+      "organic": ["Spinosad baits", "Diatomaceous earth"],
+      "chemical": ["Methomyl", "Chlorpyrifos"],
+      "biological": ["Birds", "Ground beetles"]
+    },
+    "hazard": {
+      "level": "Low Hazard",
+      "level_color": "#22c55e",
+      "traits": {"Venomous": false, "Bites": false, "Disease carrier": false, "Allergy risk": true},
+      "first_aid": "Wash hands after contact.",
+      "precautions": "Caterpillar hairs may cause mild skin irritation."
+    }
+  },
+  "Default": {
+    "scientific_name": "Identified Arthropod",
+    "fun_fact": "This insect has been identified by the custom AI model. Refer to general pest control guidelines.",
+    "impact": {
+      "crops": ["Various Crops"],
+      "loss_level": "Variable",
+      "loss_desc": "Impact depends on specific local conditions and population density.",
+      "infestation_level": "Detected Infestation",
+      "heatmap_desc": "AI focus map generated over the insect body.",
+      "actions": ["Consult local agricultural extension for tailored advice", "Monitor population levels", "Implement Integrated Pest Management (IPM)"],
+      "organic": ["Neem oil", "Sticky traps", "Crop rotation"],
+      "chemical": ["Broad-spectrum insecticides (use cautiously)"],
+      "biological": ["Encourage natural predators"]
+    },
+    "hazard": {
+      "level": "Unknown",
+      "level_color": "#64748b",
+      "traits": {"Venomous": false, "Bites": false, "Disease carrier": false, "Allergy risk": false},
+      "first_aid": "Exercise standard caution. Wash hands after handling.",
+      "precautions": "Avoid direct contact with unknown species."
+    }
+  }
+}

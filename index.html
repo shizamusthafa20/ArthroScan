@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArthroScan - Pest Identification Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <!-- Load an icon library for simple icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Top Section: Image & Basic Info -->
+        <div class="top-section">
+            <div class="image-panel panel">
+                <div class="image-upload-area" id="image-upload-area">
+                    <img id="main-image" src="" alt="Upload an Arthropod" style="display:none;">
+                    <div class="upload-placeholder" id="upload-placeholder">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <p>Click or Drag Image Here</p>
+                    </div>
+                    <input type="file" id="file-input" accept="image/*" style="display: none;">
+                </div>
+                <button class="identify-btn" id="identify-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i> Identify Arthropod
+                </button>
+            </div>
+
+            <div class="info-panel panel" id="info-panel">
+                <div class="info-header">
+                    <span class="badge safe-badge" id="hazard-status">Ready</span>
+                    <span class="confidence" id="confidence-text">Confidence: --%</span>
+                </div>
+                <h1 id="common-name">Upload Image</h1>
+                <h3 id="scientific-name">Awaiting identification</h3>
+                
+
+            </div>
+        </div>
+
+        <!-- Middle Section: Assessments -->
+        <div class="assessments-section">
+            <div class="crop-impact-panel panel" id="crop-panel">
+                <h2>🌾 Crop Impact Assessment</h2>
+                <div class="affected-crops">
+                    <span>Affected crops:</span>
+                    <div class="crop-badges" id="crop-badges">
+                        <span class="badge blank-badge">--</span>
+                    </div>
+                </div>
+
+                <div class="economic-loss" id="economic-loss-box">
+                    <strong class="loss-title" id="loss-title">Economic loss level: --</strong>
+                    <p id="loss-desc">--</p>
+                </div>
+
+                <div class="recommended-actions">
+                    <strong class="actions-title" id="actions-title">Recommended actions:</strong>
+                    <ul id="actions-list">
+                        <li>--</li>
+                    </ul>
+                </div>
+
+                <div class="treatment-options">
+                    <div class="treatment-card organic">
+                        <h4>🌿 Organic</h4>
+                        <ul id="organic-list"><li>--</li></ul>
+                    </div>
+                    <div class="treatment-card chemical">
+                        <h4>⚗️ Chemical</h4>
+                        <ul id="chemical-list"><li>--</li></ul>
+                    </div>
+                    <div class="treatment-card biological">
+                        <h4>🐞 Biological</h4>
+                        <ul id="biological-list"><li>--</li></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="human-hazard-panel panel" id="hazard-panel">
+                <h2>⚠️ Human Hazard Assessment</h2>
+                <span class="badge safe-badge main-hazard-badge" id="human-hazard-level">--</span>
+                
+                <div class="traits" id="traits-list">
+                    <span class="trait inactive">X Venomous</span>
+                    <span class="trait inactive">X Bites</span>
+                    <span class="trait inactive">X Disease carrier</span>
+                    <span class="trait inactive">X Allergy risk</span>
+                </div>
+
+                <div class="first-aid-box">
+                    <h4>🩹 First Aid:</h4>
+                    <p id="first-aid-text">--</p>
+                </div>
+                
+                <div class="precautions-box">
+                    <h4>🛡️ Precautions</h4>
+                    <p id="precautions-text">--</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Section: AI Explainability -->
+        <div class="explainability-panel panel" id="explainability-panel">
+            <h2>🔬 AI Explainability — Grad-CAM Heatmap</h2>
+            <p class="subtitle">Red/yellow areas show which regions of the image the AI focused on to make its prediction.</p>
+            
+            <div class="heatmap-comparison">
+                <div class="image-wrapper">
+                    <span>Original Image</span>
+                    <img id="orig-explain-img" src="" alt="Original Image" class="empty-img">
+                </div>
+                <div class="image-wrapper">
+                    <span>AI Focus Map</span>
+                    <img id="heatmap-img" src="" alt="Grad-CAM Heatmap" class="empty-img">
+                </div>
+            </div>
+
+            <div class="infestation-bar">
+                <span class="badge warning-badge" id="infestation-level">--</span>
+                <span class="infestation-desc" id="heatmap-desc">--</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/assets/script.js"></script>
+</body>
+</html>
